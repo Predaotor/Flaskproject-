@@ -1,0 +1,223 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<section class="rankings">
+    <h1>Current UFC Athlete Rankings</h1>
+
+    <section class="rankings-section">
+    <div class="rankings-container">        
+    <div class="weight-class">
+        <h2>Flyweight</h2>
+        <div class="champion">
+            <h3>Champion: Alexandre Pantoja</h3>
+            <img src="{{ url_for('static', filename='images/alexandre.jpg') }}" alt="Alexandre Pantoja" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Brandon Royval</li>
+            <li>2. Brandon Moreno</li>
+            <li>3. Amir Albazi</li>
+            <li>4. Kai Kara-France</li>
+            <li>5. Tatsuro Taira</li>
+            <li>6. Alex Perez</li>
+            <li>7. Matheus Nicolau</li>
+            <li>8. Steve Erceg</li>
+            <li>9. Manel Kape</li>
+            <li>10. Tim Elliott</li>
+            <li>11. Tagir Ulanbekov</li>
+            <li>12. Bruno Silva</li>
+            <li>13. Cody Durden</li>
+            <li>14. Asu Almabayev <span class="note">(Rank increased by 1)</span></li>
+            <li>14. Matt Schnell</li>
+        </ul>
+    </div>
+
+    <div class="weight-class">
+        <h2>Bantamweight</h2>
+        <div class="champion">
+            <h3>Champion: Merab Dvalishvili</h3>
+            <img src="{{ url_for('static', filename='images/merab_dvalishvili.png') }}" alt="Merab Dvalishvili" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Sean O'Malley <span class="note">(Rank decreased by 1)</span></li>
+            <li>2. Umar Nurmagomedov</li>
+            <li>3. Petr Yan</li>
+            <li>4. Cory Sandhagen</li>
+            <li>5. Deiveson Figueiredo</li>
+            <li>6. Henry Cejudo</li>
+            <li>7. Marlon Vera</li>
+            <li>8. Song Yadong</li>
+            <li>9. Rob Font</li>
+            <li>10. José Aldo</li>
+            <li>11. Mario Bautista</li>
+            <li>12. Kyler Phillips</li>
+            <li>13. Jonathan Martinez</li>
+            <li>14. Dominick Cruz</li>
+            <li>15. Montel Jackson</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section class="rankings-section">
+    <div class="rankings-container">
+    <div class="weight-class">
+        <h2>Featherweight</h2>
+        <div class="champion">
+            <h3>Champion: Ilia Topuria</h3>
+            <img src="{{ url_for('static', filename='images/ilia_topuria.png') }}" alt="Ilia Topuria" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Alexander Volkanovski</li>
+            <li>2. Max Holloway</li>
+            <li>3. Diego Lopes <span class="note">(Rank increased by 10)</span></li>
+            <li>4. Yair Rodriguez</li>
+            <li>5. Brian Ortega <span class="note">(Rank decreased by 2)</span></li>
+            <li>6. Movsar Evloev</li>
+            <li>7. Arnold Allen <span class="note">(Rank decreased by 2)</span></li>
+            <li>8. Josh Emmett <span class="note">(Rank decreased by 1)</span></li>
+            <li>9. Aljamain Sterling <span class="note">(Rank decreased by 1)</span></li>
+            <li>10. Calvin Kattar <span class="note">(Rank decreased by 1)</span></li>
+            <li>11. Giga Chikadze <span class="note">(Rank decreased by 1)</span></li>
+            <li>12. Lerone Murphy <span class="note">(Rank decreased by 1)</span></li>
+            <li>13. Bryce Mitchell <span class="note">(Rank decreased by 1)</span></li>
+            <li>14. Dan Ige</li>
+            <li>15. Edson Barboza</li>
+        </ul>
+    </div>
+
+    <div class="weight-class">
+        <h2>Lightweight</h2>
+        <div class="champion">
+            <h3>Champion: Islam Makhachev</h3>
+            <img src="{{ url_for('static', filename='images/islam_makhachev.png') }}" alt="Islam Makhachev" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Arman Tsarukyan</li>
+            <li>2. Charles Oliveira</li>
+            <li>3. Justin Gaethje</li>
+            <li>4. Dustin Poirier</li>
+            <li>5. Dan Hooker</li>
+            <li>6. Michael Chandler</li>
+            <li>7. Beneil Dariush</li>
+            <li>8. Mateusz Gamrot</li>
+            <li>9. Max Holloway</li>
+            <li>10. Rafael Fiziev</li>
+            <li>11. Renato Moicano</li>
+            <li>12. Benoît Saint Denis</li>
+            <li>13. Rafael Dos Anjos</li>
+            <li>14. Jalin Turner</li>
+            <li>15. Paddy Pimblett</li>
+        </ul>
+    </div>
+</div>
+</section>
+<section class="rankings-section">
+    <div class="rankings-container">
+    <div class="weight-class">
+        <h2>Welterweight</h2>
+        <div class="champion">
+            <h3>Champion: Belal Muhammad</h3>
+            <img src="{{ url_for('static', filename='images/belal_muhamed.png') }}" alt="Belal Muhammad" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Leon Edwards</li>
+            <li>2. Kamaru Usman</li>
+            <li>3. Shavkat Rakhmonov</li>
+            <li>4. Jack Della Maddalena</li>
+            <li>5. Colby Covington</li>
+            <li>6. Sean Brady</li>
+            <li>7. Ian Machado Garry</li>
+            <li>8. Gilbert Burns</li>
+            <li>9. Stephen Thompson</li>
+            <li>10. Geoff Neal</li>
+            <li>11. Joaquin Buckley</li>
+            <li>12. Michael Morales</li>
+            <li>13. Michael Page</li>
+            <li>14. Vicente Luque</li>
+            <li>15. Neil Magny</li>
+            <li>15. Kevin Holland</li>
+        </ul>
+    </div>
+
+    <div class="weight-class">
+        <h2>Middleweight</h2>
+        <div class="champion">
+            <h3>Champion: Dricus Du Plessis</h3>
+            <img src="{{ url_for('static', filename='images/dricus.png') }}" alt="Dricus Du Plessis" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Sean Strickland</li>
+            <li>2. Israel Adesanya</li>
+            <li>3. Robert Whittaker</li>
+            <li>4. Nassourdine Imavov</li>
+            <li>5. Caio Borralho</li>
+            <li>6. Marvin Vettori</li>
+            <li>7. Jared Cannonier</li>
+            <li>8. Brendan Allen</li>
+            <li>9. Paulo Costa</li>
+            <li>10. Roman Dolidze</li>
+            <li>11. Jack Hermansson</li>
+            <li>12. Khamzat Chimaev</li>
+            <li>13. Anthony Hernandez</li>
+            <li>14. Michel Pereira</li>
+            <li>15. Chris Curtis</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section class="rankings-section">
+    <div class="rankings-container">
+    <div class="weight-class">
+        <h2>Light Heavyweight</h2>
+        <div class="champion">
+            <h3>Champion: Alex Pereira</h3>
+            <img src="{{ url_for('static', filename='images/perreira.png') }}" alt="Alex Pereira" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Jiří Procházka</li>
+            <li>2. Magomed Ankalaev</li>
+            <li>3. Jamahal Hill</li>
+            <li>4. Jan Błachowicz</li>
+            <li>5. Aleksandar Rakić</li>
+            <li>6. Volkan Oezdemir</li>
+            <li>7. Nikita Krylov</li>
+            <li>8. Khalil Rountree Jr.</li>
+            <li>9. Johnny Walker</li>
+            <li>10. Carlos Ulberg</li>
+            <li>11. Azamat Murzakanov</li>
+            <li>12. Anthony Smith</li>
+            <li>13. Dominick Reyes</li>
+            <li>14. Bogdan Guskov</li>
+            <li>15. Alonzo Menifield</li>
+        </ul>
+    </div>
+
+    <div class="weight-class">
+        <h2>Heavyweight</h2>
+        <div class="champion">
+            <h3>Champion: Jon Jones</h3>
+            <img src="{{ url_for('static', filename='images/jhon-jones.png') }}" alt="Jon Jones" />
+        </div>
+        <ul class="rankings-list">
+            <li>1. Tom Aspinall (interim)</li>
+            <li>2. Ciryl Gane</li>
+            <li>3. Alexander Volkov</li>
+            <li>4. Sergei Pavlovich</li>
+            <li>5. Curtis Blaydes</li>
+            <li>6. Jailton Almeida</li>
+            <li>7. Serghei Spivac</li>
+            <li>8. Stipe Miocic</li>
+            <li>9. Jairzinho Rozenstruik</li>
+            <li>9. Marcin Tybura</li>
+            <li>11. Derrick Lewis</li>
+            <li>12. Tai Tuivasa</li>
+            <li>13. Alexandr Romanov</li>
+            <li>14. Marcos Rogerio de Lima</li>
+            <li>15. Rodrigo Nascimento</li>
+        </ul>
+    </div>
+</div>
+</section>
+</section>
+{% endblock %}

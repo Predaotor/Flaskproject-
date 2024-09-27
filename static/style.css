@@ -1,0 +1,523 @@
+/* Header (Green Background) */
+header {
+    background-color: black;  /* Green background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+h1, h2, h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Footer (Dark Green Background) */
+footer {
+    background-color: black;  /* Dark green background */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position:absolute;
+    
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.upcoming-events h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event-list {
+    background-color: goldenrod;
+    display: flex;
+    
+    justify-content: flex-start;
+   
+    
+    
+}
+
+.event {
+    margin: 10px;
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    
+    
+  
+} 
+@media (max-width: 768px) {
+    .event {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+   
+}
+
+.event h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    
+}
+
+/* Sports Categories Section */
+.categories {
+    padding: 40px;
+    background-color: white;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.category-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.category a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #008000;  /* Green for "Read More" buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category a:hover {
+    background-color: red;
+}
+.hero{
+    background: linear-gradient(to bottom right, #333 #666);
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIN{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+.btn:hover{
+    background-color: #005700;
+    transform: scale(1.05);
+}
+
+.event {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+body{
+    font: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Rankings Section */
+.rankings {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Weight Class Styles */
+.weight-class {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weight-class h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.champion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.champion h3 {
+    font-size: 1.5em;
+    color: #e67e22; /* Orange color for champions */
+}
+
+.champion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Rankings List Styles */
+.rankings-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rankings-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.rankings-list li:last-child {
+    border-bottom: none;
+}
+
+/* Notes Styles */
+.note {
+    font-size: 0.9em;
+    color: #e74c3c; /* Red color for notes */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weight-class {
+        padding: 15px;
+    }
+
+    .weight-class h2 {
+        font-size: 1.5em;
+    }
+
+    .champion h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Rankings Section */
+.rankings-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.rankings-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Rankings Container: Two lists side by side */
+.rankings-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for lists */
+    gap: 30px; /* Space between the two lists */
+    padding: 20px;
+}
+
+/* Each ranking list styles */
+.ranking-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e67e22; /* Accent color */
+    text-align: center;
+}
+
+.ranking-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ranking-list li {
+    font-size: 1.1em;
+    color: #555;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ranking-list li .rank {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.ranking-list li .fighter-name {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .rankings-container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}
+
+.news-item{
+    margin:0 auto;
+    max-width: 1200xp;
+    padding: 40px;
+}
+
+.news-section{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+.news-item{
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.1);
+}
+.news-item h2 {
+    font-size: 1.75rem;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.news-item p, .news-item ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.news-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .news-section h1 {
+        font-size: 2rem;
+    }
+
+    .news-item h2 {
+        font-size: 1.5rem;
+    }
+    .video-container iframe{
+        height: 280px;
+    }
+}
+
+.events {
+    background-color: #ffffff; /* White background */
+    
+}
+
+.event {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.event h2 {
+    margin-bottom: 5px;
+}
+
+.event p {
+    margin-bottom: 8px;
+}
+
+.events1 {
+    background-color: white; /* White background for the events section */
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.events1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event-list1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if necessary */
+    justify-content: space-between; /* Distributes space between items */
+    gap: 20px; /* Gap between event cards */
+}
+
+.event2 {
+    background-color: #f9f9f9; /* Light gray background for event cards */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside event cards */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for hover effects */
+}
+
+.event2:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.event2 h2 a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.event2 h2 a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Container for all news items */
+.news1 {
+    padding: 20px;
+    background-color: #f5f5f5;  /* Light grey background */
+}
+
+/* Flex container for news items */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Space between each item */
+    justify-content: center;  /* Center the content */
+}
+
+/* Each news item box */
+.news-item {
+    flex: 1 1 calc(50% - 40px);  /* Two items per row with space in between */
+    max-width: 500px;  /* Set a maximum width for each item */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for news item */
+.news-item:hover {
+    transform: translateY(-5px);  /* Elevates slightly when hovered */
+}
+
+/* Styling for the news images */
+.news-image {
+    width: 100%;  /* Make the image take up the full width */
+    height: auto;
+    max-height: 300px;  /* Optional: Set a max height */
+    object-fit: cover;  /* Ensure the image maintains its aspect ratio */
+    border-bottom: 1px solid #ddd;  /* Separate the image from the text */
+}
+
+/* Description styling */
+.news-description {
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.news-description h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.news-description a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.news-description a:hover {
+    color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .news-item {
+        flex: 1 1 100%;  /* Stack the news items on top of each other on smaller screens */
+    }
+}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<section class="upcoming-events"  aria-labelledby="upcoming-events-title">
+
+    <h2 id="upcoming-title-events">Top 3 Upcoming Events</h2>
+    <div class="event-list">
+        <div class="event">
+            <h3>Lightheavyweight Title Bout 
+                UFC 307
+            </h3>
+            <img src="{{ url_for('static', filename='/images/event1.png')}}" alt="Lightheavyweight Title Bout UFC 307" style="width:300px, height:auto;"/>
+            <p>Date: October 5   4:00 AM GMT+2 / Main Card</p>
+            <p>Location: Delta Center
+                Salt Lake City, UT United States</p>
+        </div>
+
+        <div class="event">
+            <h3>Featherweight Title Bout
+                UFC 308
+            </h3>
+            <img src="{{ url_for('static', filename='images/event3.png') }}" alt="Light heavyweight Title Bout" style="width:300px, height:auto;"/>
+
+
+            <p>Date: October 26, 2024/ 8:00 PM GMT+2</p>
+            <p>Location: Etihad Arena, Yas Island </p>
+        </div>
+
+        <div class="event">
+            <h3>Heavyweight Title Bout 
+                UFC 309</h3>
+            <img src="{{ url_for('static', filename= '/images/event2.png')}}" alt="Heavyweight Title Bout UFC 309" style="width:300px, height:auto;"/>
+            <p>Date: Sun, Nov 17 / 4:00 AM GMT+2 / Main Card</p>
+            <p>Location: Madison Square Garden
+                New York, NY United States</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

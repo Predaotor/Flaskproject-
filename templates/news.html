@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="news1">
+    <h1>UFC Trending Events</h1>
+    <div class="news-container">
+        {% for item in news %}
+        <div class="news-item">
+            <!-- Check if the item has a video URL -->
+            {% if item.video_url %}
+            <div class="video-container">
+                <!-- Embed the video if it exists -->
+                <iframe src="{{ item.video_url }}" frameborder="0" allowfullscreen class="news-video"></iframe>
+            </div>
+            {% else %}
+            <!-- If no video URL, display the image -->
+            <a href="{{ item.link }}" target="_blank">
+                <img src="{{ item.image }}" alt="{{ item.title }}" class="news-image">
+            </a>
+            {% endif %}
+            
+            <!-- News Description -->
+            <div class="news-description">
+                <a href="{{ item.link }}" target="_blank">
+                    <h3>{{ item.title }}</h3>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 
+
+

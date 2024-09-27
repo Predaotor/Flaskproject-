@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Stay updated with UFC events, news, and rankings.">
+    <meta name="keywords" content="UFC, Sports, Events, News">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UFC Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>UFC Website</h1>
+        <nav>
+            <a href="/" aria-label="Home">HOME</a>
+            <a href="/News" aria-label="News">NEWS</a>
+            <a href="/Rankings" aria-label="Rankings">RANKINGS</a>
+            <a href="/Events" aria-label="Events">EVENTS</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Sports Website</p>
+    </footer>
+</body>
+</html>
